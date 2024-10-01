@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CurrencyTracker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b46c77811025c38ffccb224c2d911f8be1b46fd5")]
 [assembly: System.Reflection.AssemblyProductAttribute("CurrencyTracker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CurrencyTracker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -3,8 +3,13 @@
 namespace CurrencyTracker.Domain.Entities;
 public class Currency
 {
+    private string _code;
     public Guid Id { get; set; }
-    public string Code { get; set; }
+    public string Code
+    {
+        get => _code;
+        set => _code = value?.ToUpper();
+    }
     public List<ExchangeRate> ExchangeRates { get; set; }
     public List<User> CurrencyUsers { get; set; }
 

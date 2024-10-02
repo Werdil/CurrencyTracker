@@ -59,14 +59,14 @@ namespace CurrencyTracker.Migrations
                 name: "UserCurrency",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false, defaultValueSql: "NEWID()"),
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CurrencyId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()")
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_UserCurrency", x => x.Id);
+                    table.PrimaryKey("PK_UserCurrency", x => new { x.UserId, x.CurrencyId });
                     table.ForeignKey(
                         name: "FK_UserCurrency_Currencies_CurrencyId",
                         column: x => x.CurrencyId,
@@ -90,11 +90,6 @@ namespace CurrencyTracker.Migrations
                 name: "IX_UserCurrency_CurrencyId",
                 table: "UserCurrency",
                 column: "CurrencyId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_UserCurrency_UserId",
-                table: "UserCurrency",
-                column: "UserId");
         }
 
         /// <inheritdoc />

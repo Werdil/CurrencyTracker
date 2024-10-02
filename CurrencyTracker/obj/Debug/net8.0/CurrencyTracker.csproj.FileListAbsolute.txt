@@ -144,5 +144,3 @@ C:\GIT\CurrencyTracker\CurrencyTracker\bin\Debug\net8.0\ClientApp\currency-track
 C:\GIT\CurrencyTracker\CurrencyTracker\bin\Debug\net8.0\ClientApp\currency-tracker\tsconfig.app.json
 C:\GIT\CurrencyTracker\CurrencyTracker\bin\Debug\net8.0\ClientApp\currency-tracker\tsconfig.json
 C:\GIT\CurrencyTracker\CurrencyTracker\bin\Debug\net8.0\ClientApp\currency-tracker\tsconfig.spec.json
-C:\GIT\CurrencyTracker\CurrencyTracker\bin\Debug\net8.0\ClientApp\package-lock.json
-C:\GIT\CurrencyTracker\CurrencyTracker\bin\Debug\net8.0\ClientApp\package.json

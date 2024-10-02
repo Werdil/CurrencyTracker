@@ -80,27 +80,23 @@ namespace CurrencyTracker.Migrations
 
             modelBuilder.Entity("CurrencyTracker.Domain.Entities.UserCurrency", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier")
-                        .HasDefaultValueSql("NEWID()");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CurrencyId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreatedDate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GETDATE()");
 
-                    b.Property<Guid>("CurrencyId")
+                    b.Property<Guid>("Id")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
+                    b.HasKey("UserId", "CurrencyId");
 
                     b.HasIndex("CurrencyId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("UserCurrency");
                 });

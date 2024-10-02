@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CurrencyTracker.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20241001123031_InitialCreate")]
+    [Migration("20241002204812_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -83,27 +83,23 @@ namespace CurrencyTracker.Migrations
 
             modelBuilder.Entity("CurrencyTracker.Domain.Entities.UserCurrency", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier")
-                        .HasDefaultValueSql("NEWID()");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CurrencyId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreatedDate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GETDATE()");
 
-                    b.Property<Guid>("CurrencyId")
+                    b.Property<Guid>("Id")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
+                    b.HasKey("UserId", "CurrencyId");
 
                     b.HasIndex("CurrencyId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("UserCurrency");
                 });

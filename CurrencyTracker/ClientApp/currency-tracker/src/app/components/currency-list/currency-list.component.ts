@@ -53,11 +53,10 @@ export class CurrencyListComponent implements OnInit {
   subscribeToCurrency(code: string): void {
     this.currencyService.subscribeToCurrency(code).subscribe(
       () => {
-        alert(`Successfully subscribed to the currency: ${code}`);
+        this.getCurrencyList();
       },
       error => {
         console.error('Error:', error);
-        alert('Error subscribing to the currency');
       }
     );
   }

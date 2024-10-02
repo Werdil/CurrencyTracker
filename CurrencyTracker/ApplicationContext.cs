@@ -36,10 +36,10 @@ public class ApplicationContext : DbContext
                     .WithMany()
                     .HasForeignKey(uc => uc.CurrencyId);
 
-                u.HasKey(x => x.Id);
-                u.Property(x => x.Id)
-                    .ValueGeneratedOnAdd()
-                    .HasDefaultValueSql("NEWID()");
+                u.HasKey(x => new {x.UserId,x.CurrencyId });
+                //u.Property(x => x.Id)
+                //    .ValueGeneratedOnAdd()
+                //    .HasDefaultValueSql("NEWID()");
                 u.Property(x => x.CreatedDate)
                     .HasDefaultValueSql("GETDATE()");
             });

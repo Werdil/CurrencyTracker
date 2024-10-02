@@ -1,0 +1,15 @@
+html, body { height: 100%; }
+body { margin: 0;  }
+
+.full-width {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    flex-direction: column;
+  }

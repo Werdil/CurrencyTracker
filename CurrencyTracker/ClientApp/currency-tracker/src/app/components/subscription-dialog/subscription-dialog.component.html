@@ -1,0 +1,19 @@
+<h2 mat-dialog-title>Subscribe to currency</h2>
+
+<div mat-dialog-content>
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Currency</mat-label>
+    <mat-select [(value)]="selectedCurrency">
+      <mat-option *ngFor="let currency of currencies" [value]="currency">
+        {{ currency }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="onSubscribe()" [disabled]="!selectedCurrency">
+    Subscribe
+  </button>
+</div>

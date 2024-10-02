@@ -138,3 +138,11 @@ C:\GIT\CurrencyTracker\CurrencyTracker\bin\Debug\net8.0\runtimes\win\lib\net6.0\
 C:\GIT\CurrencyTracker\CurrencyTracker\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\GIT\CurrencyTracker\CurrencyTracker\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\GIT\CurrencyTracker\CurrencyTracker\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
+C:\GIT\CurrencyTracker\CurrencyTracker\bin\Debug\net8.0\ClientApp\currency-tracker\angular.json
+C:\GIT\CurrencyTracker\CurrencyTracker\bin\Debug\net8.0\ClientApp\currency-tracker\package-lock.json
+C:\GIT\CurrencyTracker\CurrencyTracker\bin\Debug\net8.0\ClientApp\currency-tracker\package.json
+C:\GIT\CurrencyTracker\CurrencyTracker\bin\Debug\net8.0\ClientApp\currency-tracker\tsconfig.app.json
+C:\GIT\CurrencyTracker\CurrencyTracker\bin\Debug\net8.0\ClientApp\currency-tracker\tsconfig.json
+C:\GIT\CurrencyTracker\CurrencyTracker\bin\Debug\net8.0\ClientApp\currency-tracker\tsconfig.spec.json
+C:\GIT\CurrencyTracker\CurrencyTracker\bin\Debug\net8.0\ClientApp\package-lock.json
+C:\GIT\CurrencyTracker\CurrencyTracker\bin\Debug\net8.0\ClientApp\package.json

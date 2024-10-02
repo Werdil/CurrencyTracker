@@ -30,6 +30,7 @@
 
   <ItemGroup>
     <Folder Include="Infrastructure\Security\" />
+    <Folder Include="ClientApp\" />
   </ItemGroup>
 
 </Project>

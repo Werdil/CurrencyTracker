@@ -1,0 +1,16 @@
+<div class="currency-history-container">
+  <table mat-table [dataSource]="exchangeRates" class="mat-elevation-z8">
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef> Date </th>
+      <td mat-cell *matCellDef="let rate"> {{ rate.date | date }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="value">
+      <th mat-header-cell *matHeaderCellDef> Value </th>
+      <td mat-cell *matCellDef="let rate"> {{ rate.value }} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="['date', 'value']"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['date', 'value'];"></tr>
+  </table>
+</div>

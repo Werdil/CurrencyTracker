@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <span class="title">{{ title }}</span>
+  <span class="spacer"></span>
+  <ng-container *ngIf="isLoggedIn(); else loggedOut">
+    <a mat-button (click)="logout()">Logout</a>
+  </ng-container>
+  <ng-template #loggedOut>
+    <a mat-button routerLink="/login">Login</a>
+    <a mat-button routerLink="/register">Register</a>
+  </ng-template>
+</mat-toolbar>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>

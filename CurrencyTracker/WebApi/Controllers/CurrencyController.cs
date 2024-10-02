@@ -1,5 +1,6 @@
 ﻿using CurrencyTracker.Application.Services;
 using CurrencyTracker.Domain.Interfaces;
+using CurrencyTracker.WebApi.Dtos;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -21,7 +22,7 @@ public class CurrencyController : ControllerBase
     }
 
     [HttpGet("all-rate-info")]
-    public async Task<IActionResult> GetAllCurrencyRateInfosForUser()
+    public async Task<ActionResult<List<CurrencyRateInfoDto>>> GetAllCurrencyRateInfosForUser()
     {
         var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
         var result = await _userService.GetAllCurrencyRateInfosForUser(userId);
@@ -36,7 +37,7 @@ public class CurrencyController : ControllerBase
         return Ok();
     }
     [HttpGet("{code}/history")]
-    public async Task<IActionResult> GetCurrencyHistory(string code)
+    public async Task<ActionResult<List<ExchangeRateDto>>> GetCurrencyHistory(string code)
     {
         var history = await _currencyService.GetCurrencyRates(code);
         return Ok(history);
@@ -44,7 +45,7 @@ public class CurrencyController : ControllerBase
 
 
     [HttpGet("rate-info/{code}/{days}")]
-    public async Task<IActionResult> GetCurrencyRateInfo(string code, int days)
+    public async Task<ActionResult<CurrencyRateInfoDto>> GetCurrencyRateInfo(string code, int days)
     {
         if (string.IsNullOrWhiteSpace(code) || days <= 0)
         {

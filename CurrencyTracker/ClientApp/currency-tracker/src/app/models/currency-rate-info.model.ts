@@ -3,5 +3,6 @@ export class CurrencyRateInfoDto {
     minRate?: number;
     maxRate?: number;
     code?: string;
+    yesterdayValue?: number;
   }
   

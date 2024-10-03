@@ -9,6 +9,11 @@
       <td mat-cell *matCellDef="let currency"> {{ currency.code }} </td>
     </ng-container>
 
+    <ng-container matColumnDef="yesterdayValue">
+      <th mat-header-cell *matHeaderCellDef> Yesterday value </th>
+      <td mat-cell *matCellDef="let currency"> {{ currency.yesterdayValue }} </td>
+    </ng-container>
+
     <ng-container matColumnDef="averageRate">
       <th mat-header-cell *matHeaderCellDef> Average Rate </th>
       <td mat-cell *matCellDef="let currency"> {{ currency.averageRate }} </td>
@@ -30,9 +35,15 @@
         <button mat-raised-button color="primary" (click)="viewCurrencyHistory(currency.code)">
           View History
         </button>
+        <button mat-raised-button color="accent" (click)="openEmaDialog(currency.code)">
+          Calculate EMA
+        </button>
+        <button mat-raised-button color="warn" (click)="unsubscribeCurrency(currency.code)">
+          Unsubscribe
+        </button>
       </td>
     </ng-container>
 
-    <tr mat-header-row *matHeaderRowDef="['code', 'averageRate', 'minRate', 'maxRate', 'actions']"></tr>
-    <tr mat-row *matRowDef="let row; columns: ['code', 'averageRate', 'minRate', 'maxRate', 'actions'];"></tr>
+    <tr mat-header-row *matHeaderRowDef="['code','yesterdayValue', 'averageRate', 'minRate', 'maxRate', 'actions']"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['code','yesterdayValue', 'averageRate', 'minRate', 'maxRate', 'actions'];"></tr>
   </table>

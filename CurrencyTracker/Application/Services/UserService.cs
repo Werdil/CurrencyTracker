@@ -1,5 +1,7 @@
-﻿using CurrencyTracker.Domain.Entities;
+﻿using AutoMapper;
+using CurrencyTracker.Domain.Entities;
 using CurrencyTracker.Domain.Interfaces;
+using CurrencyTracker.Infrastructure.Repositories;
 using CurrencyTracker.WebApi.Dtos;
 using System.Security.Claims;
 
@@ -9,18 +11,21 @@ public class UserService : IUserService
     private readonly TokenService _tokenService;
     private readonly CurrencyService _currencyService;
 
-    
+    private readonly IMapper _mapper;
     private readonly IUserRepository _userRepository;
+    private readonly ICurrencyRepository _currencyRepository;
     private readonly ICurrencyHelper _currencyHelper;
 
 
 
-    public UserService(IUserRepository userRepository, TokenService tokenService, ICurrencyHelper currencyHelper, CurrencyService currencyService)
+    public UserService(IUserRepository userRepository, TokenService tokenService, ICurrencyHelper currencyHelper, CurrencyService currencyService, ICurrencyRepository currencyRepository, IMapper mapper)
     {
         _userRepository = userRepository;
         _tokenService = tokenService;
         _currencyHelper = currencyHelper;
         _currencyService = currencyService;
+        _currencyRepository = currencyRepository;
+        _mapper = mapper;
     }
 
     public async Task RegisterAsync(string username, string password, string confirmPassword)
@@ -62,24 +67,43 @@ public class UserService : IUserService
 
     public async Task SubscribeCurrency(string userid, string code)
     {
-        var currency = await _currencyHelper.GetCurrency(code);
+        var currency = await _currencyRepository.GetByCodeAsync(code);
+        if (currency == null)
+        {
+            currency = await _currencyHelper.DownloadAndSaveCurrency(code);
+        }
         var guid = Guid.Parse(userid);
         var user = await _userRepository.GetByUserIdAsync(guid);
-        if (user != null)
+        if (user != null && currency != null)
         {
             user.UserCurrencies.Add(currency);
         }
         await _userRepository.UpdateAsync(user);
     }
 
+    public async Task UnsubscribeCurrency(string userid, string code)
+    {
+        var userIdGuid = Guid.Parse(userid);
+        var currency = await _currencyRepository.GetByCodeAsync(code);
+        if (currency != null)
+        {
+            await _userRepository.DeleteUserCurrencyAsync(userIdGuid, currency.Id);
+        }
+    }
+
     public async Task<List<CurrencyRateInfoDto>> GetAllCurrencyRateInfosForUser(string userid)
     {
         var guid = Guid.Parse(userid);
-        var a = await _userRepository.GetByUserIdAsync(guid);
-        var user = await _userRepository.GetByUserIdWithCurrenciesAsync(guid);
+
+        
+
+        var user = await _userRepository.GetByUserIdWithCurrenciesAsync(guid, u => u.ExchangeRates
+                .OrderByDescending(er => er.Date)
+                .Take(14));
         if (user != null)
         {
-            return await user.GetCurrencyRateInfos(14);
+            var dtos = _mapper.Map<List<CurrencyRateInfoDto>>(user.UserCurrencies);
+            return dtos;
         }
         return new List<CurrencyRateInfoDto>();
     }

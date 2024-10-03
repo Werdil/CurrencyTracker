@@ -21,12 +21,4 @@ public class User
         return BCrypt.Net.BCrypt.Verify(password, PasswordHash);
     }
 
-    public async Task<List<CurrencyRateInfoDto>> GetCurrencyRateInfos(int days)
-    {
-
-        if (UserCurrencies == null)
-            return null;
-
-        return UserCurrencies.Select(c => c.GetCurrencyRateInfoDto(days)).ToList();
-    }
 }

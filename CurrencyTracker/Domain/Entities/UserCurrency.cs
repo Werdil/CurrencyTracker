@@ -2,12 +2,12 @@
 
 public class UserCurrency
 {
-    public Guid Id { get; set; }
-    public Guid UserId { get; set; }
-    public Guid CurrencyId { get; set; }
-    public DateTime CreatedDate { get; set; }
+    public Guid Id { get; private set; }
+    public Guid UserId { get; private set; }
+    public Guid CurrencyId { get; private set; }
+    public DateTime CreatedDate { get; private set; }
 
-    public User User { get; set; }
-    public Currency Currency { get; set; }
+    public User User { get; private set; }
+    public Currency Currency { get; private set; }
 }
 

@@ -39,6 +39,7 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
+builder.Services.AddAutoMapper(typeof(CurrencyProfile));
 
 builder.Services.AddDbContext<ApplicationContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -85,6 +86,8 @@ builder.Services.AddCors(options =>
     });
 });
 
+
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -104,5 +107,6 @@ app.UseAuthorization();
 app.UseCors("AllowAllOrigins");
 
 app.MapControllers();
+
 
 app.Run();

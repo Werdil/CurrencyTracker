@@ -7,4 +7,5 @@ public interface IUserService
     Task<string> LoginAsync(string username, string password);
     Task SubscribeCurrency(string userid, string code);
     Task<List<CurrencyRateInfoDto>> GetAllCurrencyRateInfosForUser(string userid);
+    Task UnsubscribeCurrency(string userid, string code);
 }

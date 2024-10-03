@@ -28,7 +28,12 @@ public class CurrencyController : ControllerBase
         var result = await _userService.GetAllCurrencyRateInfosForUser(userId);
         return Ok(result);
     }
-
+    [HttpGet("{code}/calculate-ema")]
+    public async Task<ActionResult<List<CurrencyRateInfoDto>>> CalculateEMA(string code,DateTime date,int days)
+    {
+        var result = await _currencyService.CalculateEMA(code,date,days);
+        return Ok(result);
+    }
     [HttpPost("{code}/subscribe")]
     public async Task<IActionResult> SubscribeCurrency(string code)
     {
@@ -36,6 +41,14 @@ public class CurrencyController : ControllerBase
         await _userService.SubscribeCurrency(userId, code);
         return Ok();
     }
+    [HttpPost("{code}/unsubscribe")]
+    public async Task<IActionResult> UnsubscribeCurrency(string code)
+    {
+        var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        await _userService.UnsubscribeCurrency(userId, code);
+        return Ok();
+    }
+
     [HttpGet("{code}/history")]
     public async Task<ActionResult<List<ExchangeRateDto>>> GetCurrencyHistory(string code)
     {

@@ -73,7 +73,7 @@ export class CurrencyListComponent implements OnInit {
   openEmaDialog(code: string): void {
     const dialogRef = this.dialog.open(EmaDialogComponent, {
       width: '300px',
-      data: { code:code, date: new Date(), days: 14 } // Domyślne wartości
+      data: { code:code, date: new Date(), days: 14 }
     });
   }
 

@@ -1,9 +1,7 @@
 ﻿using CurrencyTracker.Domain.Entities;
 using CurrencyTracker.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 namespace CurrencyTracker.Infrastructure.Repositories;
 
 public class CurrencyRepository : ICurrencyRepository

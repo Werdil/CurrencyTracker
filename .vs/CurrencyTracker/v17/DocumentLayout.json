@@ -3,16 +3,76 @@
   "WorkspaceRootPath": "C:\\GIT\\CurrencyTracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\domain\\entities\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\domain\\entities\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\backgroundservices\\exchangeratebackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\backgroundservices\\exchangeratebackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\profiles\\currencyprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\profiles\\currencyprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Migrations\\20241003213629_addCurrencyIdDelId.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CurrencyTracker\\Migrations\\20241003213629_addCurrencyIdDelId.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\domain\\entities\\exchangerate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\domain\\entities\\exchangerate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Migrations\\20241003212856_addCurrencyIdFix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CurrencyTracker\\Migrations\\20241003212856_addCurrencyIdFix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Migrations\\20241003212427_addCurrencyId.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CurrencyTracker\\Migrations\\20241003212427_addCurrencyId.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\infrastructure\\repositories\\currencyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\infrastructure\\repositories\\currencyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\migrations\\applicationcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\migrations\\applicationcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\domain\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\domain\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\infrastructure\\apiclients\\nbpapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\infrastructure\\apiclients\\nbpapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\domain\\interfaces\\inbpapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\domain\\interfaces\\inbpapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\domain\\entities\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\domain\\entities\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\webapi\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\webapi\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\webapi\\dtos\\currencyrateinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,10 +83,6 @@
       "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\webapi\\dtos\\exchangeratedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,16 +91,8 @@
       "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\infrastructure\\repositories\\currencyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\infrastructure\\repositories\\currencyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\domain\\interfaces\\icurrencyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\domain\\interfaces\\icurrencyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\application\\services\\currencyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,16 +107,8 @@
       "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\webapi\\controllers\\currencycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\application\\services\\currencyhelperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\application\\services\\currencyhelperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -79,32 +119,12 @@
       "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\domain\\interfaces\\icurrencyhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\domain\\interfaces\\icurrencyhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\domain\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\domain\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\application\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\application\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\infrastructure\\apiclients\\nbpapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\infrastructure\\apiclients\\nbpapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\domain\\interfaces\\inbpapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\domain\\interfaces\\inbpapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\webapi\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\webapi\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\webapi\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -117,10 +137,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\webapi\\dtos\\currencyhistorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\webapi\\dtos\\currencyhistorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|c:\\git\\currencytracker\\currencytracker\\migrations\\20241002222227_adduserscurrencies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E58EAE-8223-410F-A8EE-0A8B443C19D2}|CurrencyTracker\\CurrencyTracker.csproj|solutionrelative:currencytracker\\migrations\\20241002222227_adduserscurrencies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -130,28 +146,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 29,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CurrencyProfile.cs",
-              "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Profiles\\CurrencyProfile.cs",
-              "RelativeDocumentMoniker": "CurrencyTracker\\Profiles\\CurrencyProfile.cs",
-              "ToolTip": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Profiles\\CurrencyProfile.cs",
-              "RelativeToolTip": "CurrencyTracker\\Profiles\\CurrencyProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
+              "Title": "20241003213629_addCurrencyIdDelId.cs",
+              "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Migrations\\20241003213629_addCurrencyIdDelId.cs",
+              "RelativeDocumentMoniker": "CurrencyTracker\\Migrations\\20241003213629_addCurrencyIdDelId.cs",
+              "ToolTip": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Migrations\\20241003213629_addCurrencyIdDelId.cs",
+              "RelativeToolTip": "CurrencyTracker\\Migrations\\20241003213629_addCurrencyIdDelId.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T14:24:33.656Z",
+              "WhenOpened": "2024-10-03T21:36:29.132Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 4,
+              "Title": "20241003212856_addCurrencyIdFix.cs",
+              "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Migrations\\20241003212856_addCurrencyIdFix.cs",
+              "RelativeDocumentMoniker": "CurrencyTracker\\Migrations\\20241003212856_addCurrencyIdFix.cs",
+              "ToolTip": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Migrations\\20241003212856_addCurrencyIdFix.cs",
+              "RelativeToolTip": "CurrencyTracker\\Migrations\\20241003212856_addCurrencyIdFix.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T21:28:56.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20241003212427_addCurrencyId.cs",
+              "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Migrations\\20241003212427_addCurrencyId.cs",
+              "RelativeDocumentMoniker": "CurrencyTracker\\Migrations\\20241003212427_addCurrencyId.cs",
+              "ToolTip": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Migrations\\20241003212427_addCurrencyId.cs",
+              "RelativeToolTip": "CurrencyTracker\\Migrations\\20241003212427_addCurrencyId.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwC8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T21:24:27.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Migrations\\ApplicationContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "CurrencyTracker\\Migrations\\ApplicationContextModelSnapshot.cs",
+              "ToolTip": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Migrations\\ApplicationContextModelSnapshot.cs",
+              "RelativeToolTip": "CurrencyTracker\\Migrations\\ApplicationContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T21:22:32.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExchangeRateBackgroundService.cs",
+              "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\BackgroundServices\\ExchangeRateBackgroundService.cs",
+              "RelativeDocumentMoniker": "CurrencyTracker\\BackgroundServices\\ExchangeRateBackgroundService.cs",
+              "ToolTip": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\BackgroundServices\\ExchangeRateBackgroundService.cs",
+              "RelativeToolTip": "CurrencyTracker\\BackgroundServices\\ExchangeRateBackgroundService.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAnwEUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T19:30:02.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "CurrencyTracker\\Middleware\\ExceptionMiddleware.cs",
+              "ToolTip": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "CurrencyTracker\\Middleware\\ExceptionMiddleware.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T18:39:22.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "CurrencyTracker\\Properties\\launchSettings.json",
@@ -159,25 +236,11 @@
               "RelativeToolTip": "CurrencyTracker\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-02T22:41:36.593Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-02T22:41:36.593Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "20241002222227_AddUsersCurrencies.cs",
-              "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Migrations\\20241002222227_AddUsersCurrencies.cs",
-              "RelativeDocumentMoniker": "CurrencyTracker\\Migrations\\20241002222227_AddUsersCurrencies.cs",
-              "ToolTip": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Migrations\\20241002222227_AddUsersCurrencies.cs",
-              "RelativeToolTip": "CurrencyTracker\\Migrations\\20241002222227_AddUsersCurrencies.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAowGYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T22:22:28.06Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 24,
               "Title": "UserCurrency.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Domain\\Entities\\UserCurrency.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\Domain\\Entities\\UserCurrency.cs",
@@ -185,12 +248,11 @@
               "RelativeToolTip": "CurrencyTracker\\Domain\\Entities\\UserCurrency.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T10:48:16.813Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T10:48:16.813Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 26,
               "Title": "CurrencyHelperService.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Application\\Services\\CurrencyHelperService.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\Application\\Services\\CurrencyHelperService.cs",
@@ -198,12 +260,11 @@
               "RelativeToolTip": "CurrencyTracker\\Application\\Services\\CurrencyHelperService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T23:53:28.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T23:53:28.505Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 29,
               "Title": "ICurrencyHelper.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Domain\\Interfaces\\ICurrencyHelper.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\Domain\\Interfaces\\ICurrencyHelper.cs",
@@ -211,12 +272,11 @@
               "RelativeToolTip": "CurrencyTracker\\Domain\\Interfaces\\ICurrencyHelper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T23:52:33.719Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T23:52:33.719Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\WebApi\\Dtos\\LoginDto.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\WebApi\\Dtos\\LoginDto.cs",
@@ -224,12 +284,11 @@
               "RelativeToolTip": "CurrencyTracker\\WebApi\\Dtos\\LoginDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T21:40:23.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T21:40:23.554Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 17,
               "Title": "RegisterDto.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\WebApi\\Dtos\\RegisterDto.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\WebApi\\Dtos\\RegisterDto.cs",
@@ -237,25 +296,24 @@
               "RelativeToolTip": "CurrencyTracker\\WebApi\\Dtos\\RegisterDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T21:40:07.108Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T21:40:07.108Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 8,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\WebApi\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\WebApi\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\WebApi\\Controllers\\AuthController.cs",
               "RelativeToolTip": "CurrencyTracker\\WebApi\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T21:39:39.713Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 30,
               "Title": "TokenService.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Application\\Services\\TokenService.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\Application\\Services\\TokenService.cs",
@@ -263,12 +321,11 @@
               "RelativeToolTip": "CurrencyTracker\\Application\\Services\\TokenService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T21:38:30.662Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T21:38:30.662Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 21,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Infrastructure\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\Infrastructure\\Repositories\\UserRepository.cs",
@@ -276,12 +333,11 @@
               "RelativeToolTip": "CurrencyTracker\\Infrastructure\\Repositories\\UserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T21:35:52.949Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T21:35:52.949Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 20,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Domain\\Interfaces\\IUserRepository.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\Domain\\Interfaces\\IUserRepository.cs",
@@ -289,51 +345,49 @@
               "RelativeToolTip": "CurrencyTracker\\Domain\\Interfaces\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T21:33:28.849Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T21:33:28.849Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Application\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\Application\\Services\\UserService.cs",
               "ToolTip": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Application\\Services\\UserService.cs",
               "RelativeToolTip": "CurrencyTracker\\Application\\Services\\UserService.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAASwGUAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwCAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T21:29:12.589Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 11,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Domain\\Interfaces\\IUserService.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\Domain\\Interfaces\\IUserService.cs",
               "ToolTip": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Domain\\Interfaces\\IUserService.cs",
               "RelativeToolTip": "CurrencyTracker\\Domain\\Interfaces\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T21:28:48.648Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\Domain\\Entities\\User.cs",
               "ToolTip": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Domain\\Entities\\User.cs",
               "RelativeToolTip": "CurrencyTracker\\Domain\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T21:21:33.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T21:21:33.21Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 18,
               "Title": "CurrencyRateInfoDto.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\WebApi\\Dtos\\CurrencyRateInfoDto.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\WebApi\\Dtos\\CurrencyRateInfoDto.cs",
@@ -341,24 +395,22 @@
               "RelativeToolTip": "CurrencyTracker\\WebApi\\Dtos\\CurrencyRateInfoDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T20:08:25.63Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T20:08:25.63Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 32,
               "Title": "CurrencyTracker",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\CurrencyTracker.csproj",
               "RelativeDocumentMoniker": "CurrencyTracker\\CurrencyTracker.csproj",
               "ToolTip": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\CurrencyTracker.csproj",
               "RelativeToolTip": "CurrencyTracker\\CurrencyTracker.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-30T18:05:38.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T18:05:38.417Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 27,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\appsettings.json",
               "RelativeDocumentMoniker": "CurrencyTracker\\appsettings.json",
@@ -366,51 +418,50 @@
               "RelativeToolTip": "CurrencyTracker\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-30T15:21:29.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T15:21:29.272Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 2,
               "Title": "ApplicationContext.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\ApplicationContext.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\ApplicationContext.cs",
               "ToolTip": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\ApplicationContext.cs",
               "RelativeToolTip": "CurrencyTracker\\ApplicationContext.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAiwBkAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwBgAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T15:02:59.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "CurrencyRepository.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Infrastructure\\Repositories\\CurrencyRepository.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\Infrastructure\\Repositories\\CurrencyRepository.cs",
               "ToolTip": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Infrastructure\\Repositories\\CurrencyRepository.cs",
               "RelativeToolTip": "CurrencyTracker\\Infrastructure\\Repositories\\CurrencyRepository.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAqwEUAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T14:53:48.414Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 12,
               "Title": "NbpApiClient.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Infrastructure\\ApiClients\\NbpApiClient.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\Infrastructure\\ApiClients\\NbpApiClient.cs",
               "ToolTip": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Infrastructure\\ApiClients\\NbpApiClient.cs",
               "RelativeToolTip": "CurrencyTracker\\Infrastructure\\ApiClients\\NbpApiClient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwCAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T14:17:55.874Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 33,
               "Title": "CurrencyHistoryDto.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\WebApi\\Dtos\\CurrencyHistoryDto.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\WebApi\\Dtos\\CurrencyHistoryDto.cs",
@@ -418,12 +469,11 @@
               "RelativeToolTip": "CurrencyTracker\\WebApi\\Dtos\\CurrencyHistoryDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T14:16:33.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T14:16:33.534Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 19,
               "Title": "ExchangeRateDto.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\WebApi\\Dtos\\ExchangeRateDto.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\WebApi\\Dtos\\ExchangeRateDto.cs",
@@ -431,25 +481,24 @@
               "RelativeToolTip": "CurrencyTracker\\WebApi\\Dtos\\ExchangeRateDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T14:16:23.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T14:16:23.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 13,
               "Title": "INbpApiClient.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Domain\\Interfaces\\INbpApiClient.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\Domain\\Interfaces\\INbpApiClient.cs",
               "ToolTip": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Domain\\Interfaces\\INbpApiClient.cs",
               "RelativeToolTip": "CurrencyTracker\\Domain\\Interfaces\\INbpApiClient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T14:15:31.354Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 22,
               "Title": "ICurrencyRepository.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Domain\\Interfaces\\ICurrencyRepository.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\Domain\\Interfaces\\ICurrencyRepository.cs",
@@ -457,12 +506,11 @@
               "RelativeToolTip": "CurrencyTracker\\Domain\\Interfaces\\ICurrencyRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAMAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T14:15:12.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T14:15:12.582Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 23,
               "Title": "CurrencyService.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Application\\Services\\CurrencyService.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\Application\\Services\\CurrencyService.cs",
@@ -470,12 +518,11 @@
               "RelativeToolTip": "CurrencyTracker\\Application\\Services\\CurrencyService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T14:14:13.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T14:14:13.89Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 25,
               "Title": "CurrencyController.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\WebApi\\Controllers\\CurrencyController.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\WebApi\\Controllers\\CurrencyController.cs",
@@ -483,31 +530,30 @@
               "RelativeToolTip": "CurrencyTracker\\WebApi\\Controllers\\CurrencyController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAADwvyEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T14:12:51.724Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T14:12:51.724Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ExchangeRate.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Domain\\Entities\\ExchangeRate.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\Domain\\Entities\\ExchangeRate.cs",
               "ToolTip": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Domain\\Entities\\ExchangeRate.cs",
               "RelativeToolTip": "CurrencyTracker\\Domain\\Entities\\ExchangeRate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAEAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T14:01:01.277Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 15,
               "Title": "Currency.cs",
               "DocumentMoniker": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Domain\\Entities\\Currency.cs",
               "RelativeDocumentMoniker": "CurrencyTracker\\Domain\\Entities\\Currency.cs",
               "ToolTip": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Domain\\Entities\\Currency.cs",
               "RelativeToolTip": "CurrencyTracker\\Domain\\Entities\\Currency.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAwDgAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA1wBIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T14:00:37.741Z",
               "EditorCaption": ""
@@ -520,7 +566,7 @@
               "RelativeDocumentMoniker": "CurrencyTracker\\Program.cs",
               "ToolTip": "C:\\GIT\\CurrencyTracker\\CurrencyTracker\\Program.cs",
               "RelativeToolTip": "CurrencyTracker\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAYwD4AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T12:37:04.823Z",
               "EditorCaption": ""

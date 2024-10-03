@@ -29,7 +29,7 @@ export class CurrencyService {
   }
 
   calculateEMA(code: string, date: Date, days: number): Observable<any> {
-    const dateString = date.toISOString().split('T')[0]; // Konwersja na string w formacie YYYY-MM-DD
+    const dateString = date.toISOString().split('T')[0];
     return this.http.get(`${this.baseUrl}/${code}/calculate-ema?date=${dateString}&days=${days}`);
   }
 }

@@ -6,7 +6,6 @@ public class ApplicationContext : DbContext
 {
     public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
     {
-        //this.Database.EnsureCreated();
     }
 
     public DbSet<Currency> Currencies { get; set; }
@@ -18,9 +17,10 @@ public class ApplicationContext : DbContext
     {
         modelBuilder.Entity<Currency>()
             .HasKey(c => c.Id);
-        modelBuilder.Entity<ExchangeRate>()
-           .HasKey(e => e.Id);
-
+        modelBuilder.Entity<ExchangeRate>(eb =>
+        {
+            eb.HasKey(e => new { e.CurrencyId, e.Date });
+        });
 
         modelBuilder.Entity<User>(eb =>
         {

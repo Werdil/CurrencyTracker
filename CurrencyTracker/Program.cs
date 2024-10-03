@@ -7,6 +7,8 @@ using CurrencyTracker.Application.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using CurrencyTracker.Middleware;
+using CurrencyTracker.BackgroundServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -39,24 +41,28 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
+
+// Configure AutoMapper
 builder.Services.AddAutoMapper(typeof(CurrencyProfile));
 
+// Configure Db
 builder.Services.AddDbContext<ApplicationContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddSingleton<TokenService>();
-
+// Configure DI
+builder.Services.AddScoped<TokenService>();
 builder.Services.AddScoped<CurrencyService>();
-
 builder.Services.AddScoped<ICurrencyRepository, CurrencyRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
-
 builder.Services.AddScoped<INbpApiClient, NbpApiClient>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<ICurrencyHelper, CurrencyHelperService>();
 
 builder.Services.AddHttpClient<INbpApiClient, NbpApiClient>();
 
+builder.Services.AddHostedService<ExchangeRateBackgroundService>();
+
+// Configure Authentication
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -75,7 +81,6 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAllOrigins", builder =>
@@ -86,9 +91,8 @@ builder.Services.AddCors(options =>
     });
 });
 
-
-
 var app = builder.Build();
+
 
 if (app.Environment.IsDevelopment())
 {
@@ -98,15 +102,13 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseRouting();
-
 app.UseAuthentication();
 app.UseAuthorization();
-
 app.UseCors("AllowAllOrigins");
 
 app.MapControllers();
 
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.Run();

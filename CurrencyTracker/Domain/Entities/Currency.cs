@@ -1,6 +1,4 @@
-﻿using CurrencyTracker.WebApi.Dtos;
-
-namespace CurrencyTracker.Domain.Entities;
+﻿namespace CurrencyTracker.Domain.Entities;
 public class Currency
 {
     private string _code;

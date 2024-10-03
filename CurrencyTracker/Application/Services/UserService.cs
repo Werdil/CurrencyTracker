@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using CurrencyTracker.Domain.Entities;
 using CurrencyTracker.Domain.Interfaces;
-using CurrencyTracker.Infrastructure.Repositories;
 using CurrencyTracker.WebApi.Dtos;
 using System.Security.Claims;
 
@@ -52,7 +51,7 @@ public class UserService : IUserService
         var user = await _userRepository.GetByUsernameAsync(username);
         if (user == null || !user.VerifyPassword(password))
         {
-            throw new Exception("Incorrect username or password");
+            throw new UnauthorizedAccessException("Incorrect username or password");
         }
 
         var claims = new List<Claim>

@@ -27,4 +27,9 @@ export class CurrencyService {
   unsubscribeToCurrency(code: string): Observable<any> {
     return this.http.post(`${this.baseUrl}/${code}/unsubscribe`, {});
   }
+
+  calculateEMA(code: string, date: Date, days: number): Observable<any> {
+    const dateString = date.toISOString().split('T')[0]; // Konwersja na string w formacie YYYY-MM-DD
+    return this.http.get(`${this.baseUrl}/${code}/calculate-ema?date=${dateString}&days=${days}`);
+  }
 }

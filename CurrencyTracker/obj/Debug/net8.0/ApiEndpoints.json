@@ -33,6 +33,42 @@
   },
   {
     "ContainingType": "CurrencyTracker.WebApi.Controllers.CurrencyController",
+    "Method": "CalculateEMA",
+    "RelativePath": "api/Currency/{code}/calculate-ema",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "days",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CurrencyTracker.WebApi.Dtos.CurrencyRateInfoDto, CurrencyTracker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CurrencyTracker.WebApi.Controllers.CurrencyController",
     "Method": "GetCurrencyHistory",
     "RelativePath": "api/Currency/{code}/history",
     "HttpMethod": "GET",

@@ -4,6 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { CurrencyService } from '../../services/currency.service';
 import { CurrencyRateInfoDto } from '../../models/currency-rate-info.model';
 import { SubscriptionDialogComponent } from '../subscription-dialog/subscription-dialog.component';
+import { EmaDialogComponent } from '../ema-dialog/ema-dialog.component';
 
 @Component({
   selector: 'app-currency-list',
@@ -48,7 +49,7 @@ export class CurrencyListComponent implements OnInit {
 
   openSubscriptionDialog(): void {
     const dialogRef = this.dialog.open(SubscriptionDialogComponent, {
-      width: '400px'
+      width: '300px'
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -68,4 +69,12 @@ export class CurrencyListComponent implements OnInit {
       }
     );
   }
+
+  openEmaDialog(code: string): void {
+    const dialogRef = this.dialog.open(EmaDialogComponent, {
+      width: '300px',
+      data: { code:code, date: new Date(), days: 14 } // Domyślne wartości
+    });
+  }
+
 }

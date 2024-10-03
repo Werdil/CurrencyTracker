@@ -1,6 +1,7 @@
 ﻿using CurrencyTracker.Domain.Entities;
 using CurrencyTracker.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace CurrencyTracker.Infrastructure.Repositories;
 public class UserRepository : IUserRepository
@@ -20,6 +21,14 @@ public class UserRepository : IUserRepository
     {
         return await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
     }
+    public async Task<User> GetByUserIdWithCurrenciesAsync(Guid id, Expression<Func<Currency, object>> includeExpression)
+    {
+        return await _context.Users
+            .Include(u => u.UserCurrencies)
+            .ThenInclude(includeExpression)
+            .FirstOrDefaultAsync(u => u.Id == id);
+    }
+
     public async Task<User> GetByUserIdWithCurrenciesAsync(Guid id)
     {
         return await _context.Users
@@ -27,6 +36,7 @@ public class UserRepository : IUserRepository
             .ThenInclude(u => u.ExchangeRates)
             .FirstOrDefaultAsync(u => u.Id == id);
     }
+
     public async Task AddAsync(User user)
     {
         await _context.Users.AddAsync(user);

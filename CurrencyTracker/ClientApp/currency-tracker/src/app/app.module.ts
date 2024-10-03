@@ -12,6 +12,9 @@ import { FormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 import { AppComponent } from './app.component';
 import { CurrencyListComponent } from './components/currency-list/currency-list.component';
@@ -29,6 +32,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { AppRoutingModule } from './app-routing.module';
 
 import {MatCardModule} from '@angular/material/card';
+import { EmaDialogComponent } from './components/ema-dialog/ema-dialog.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +41,8 @@ import {MatCardModule} from '@angular/material/card';
     CurrencyListComponent,
     CurrencyHistoryComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    EmaDialogComponent
   ],
   imports: [
     MatSlideToggleModule,
@@ -55,10 +60,12 @@ import {MatCardModule} from '@angular/material/card';
         MatButtonModule,
         MatInputModule,
         MatFormFieldModule,
-        FormsModule,
         MatSelectModule,
         AppRoutingModule,
-        HttpClientModule
+        MatNativeDateModule,
+        MatDatepickerModule,
+        HttpClientModule,
+        FormsModule,
   ],
   providers: [
     provideAnimationsAsync(),

@@ -2,6 +2,7 @@
 {
     public class CurrencyRateInfoDto
     {
+        public decimal? YesterdayValue { get; set; }
         public decimal? AverageRate { get; set; }
         public decimal? MinRate { get; set; }
         public decimal? MaxRate { get; set; }

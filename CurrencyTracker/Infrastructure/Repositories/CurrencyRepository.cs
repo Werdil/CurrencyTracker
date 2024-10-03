@@ -14,7 +14,6 @@ public class CurrencyRepository : ICurrencyRepository
     {
         _context = context;
     }
-
     public async Task<Currency> GetWithExchangeRatesByCodeAsync(string code)
     {
         return await _context.Currencies

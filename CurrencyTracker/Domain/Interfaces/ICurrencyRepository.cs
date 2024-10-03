@@ -3,6 +3,7 @@
 namespace CurrencyTracker.Domain.Interfaces;
 public interface ICurrencyRepository
 {
+    Task<Currency> GetWithExchangeRatesByCodeAsync(string code);
     Task<Currency> GetByCodeAsync(string code);
     Task<List<Currency>> GetAllAsync();
     Task AddAsync(Currency currency);

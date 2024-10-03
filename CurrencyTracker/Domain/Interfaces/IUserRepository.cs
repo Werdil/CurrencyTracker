@@ -8,4 +8,5 @@ public interface IUserRepository
     Task<User> GetByUserIdWithCurrenciesAsync(Guid id);
     Task AddAsync(User user);
     Task UpdateAsync(User user);
+    Task DeleteUserCurrencyAsync(Guid userId, Guid currencyId);
 }

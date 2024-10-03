@@ -75,6 +75,22 @@
   },
   {
     "ContainingType": "CurrencyTracker.WebApi.Controllers.CurrencyController",
+    "Method": "UnsubscribeCurrency",
+    "RelativePath": "api/Currency/{code}/unsubscribe",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CurrencyTracker.WebApi.Controllers.CurrencyController",
     "Method": "GetAllCurrencyRateInfosForUser",
     "RelativePath": "api/Currency/all-rate-info",
     "HttpMethod": "GET",

@@ -15,13 +15,17 @@ public class CurrencyRepository : ICurrencyRepository
         _context = context;
     }
 
-    public async Task<Currency> GetByCodeAsync(string code)
+    public async Task<Currency> GetWithExchangeRatesByCodeAsync(string code)
     {
         return await _context.Currencies
             .Include(c => c.ExchangeRates)
             .FirstOrDefaultAsync(c => c.Code == code);
     }
-
+    public async Task<Currency> GetByCodeAsync(string code)
+    {
+        return await _context.Currencies
+            .FirstOrDefaultAsync(c => c.Code == code);
+    }
     public async Task<List<Currency>> GetAllAsync()
     {
         return await _context.Currencies
@@ -43,7 +47,7 @@ public class CurrencyRepository : ICurrencyRepository
 
     public async Task RemoveByCodeAsync(string code)
     {
-        var currency = await GetByCodeAsync(code);
+        var currency = await GetWithExchangeRatesByCodeAsync(code);
         if (currency != null)
         {
             _context.Currencies.Remove(currency);

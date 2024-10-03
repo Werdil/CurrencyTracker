@@ -12,6 +12,7 @@ public class ApplicationContext : DbContext
     public DbSet<Currency> Currencies { get; set; }
     public DbSet<ExchangeRate> ExchangeRates { get; set; }
     public DbSet<User> Users { get; set; }
+    public DbSet<UserCurrency> UsersCurrencies { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -37,9 +38,7 @@ public class ApplicationContext : DbContext
                     .HasForeignKey(uc => uc.CurrencyId);
 
                 u.HasKey(x => new {x.UserId,x.CurrencyId });
-                //u.Property(x => x.Id)
-                //    .ValueGeneratedOnAdd()
-                //    .HasDefaultValueSql("NEWID()");
+
                 u.Property(x => x.CreatedDate)
                     .HasDefaultValueSql("GETDATE()");
             });

@@ -16,7 +16,11 @@ public class CurrencyService
 
     public async Task<List<ExchangeRateDto>> GetCurrencyRates(string code)
     {
-        var currency = await _currencyHelper.GetCurrency(code);
+        var currency = await _currencyRepository.GetWithExchangeRatesByCodeAsync(code);
+        if (currency == null)
+        {
+            currency = await _currencyHelper.DownloadAndSaveCurrency(code);
+        }
         return currency.ExchangeRates.Select(r => new ExchangeRateDto { Date = r.Date, Value = r.Value }).ToList();
     }
 
@@ -24,7 +28,7 @@ public class CurrencyService
 
     public async Task<CurrencyRateInfoDto> GetCurrencyRateInfo(string code, int days)
     {
-        var currency = await _currencyRepository.GetByCodeAsync(code);
+        var currency = await _currencyRepository.GetWithExchangeRatesByCodeAsync(code);
 
         if (currency == null)
             return null;

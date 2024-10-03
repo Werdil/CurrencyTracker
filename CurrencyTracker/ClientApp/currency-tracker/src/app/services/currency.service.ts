@@ -23,4 +23,8 @@ export class CurrencyService {
   subscribeToCurrency(code: string): Observable<any> {
     return this.http.post(`${this.baseUrl}/${code}/subscribe`, {});
   }
+
+  unsubscribeToCurrency(code: string): Observable<any> {
+    return this.http.post(`${this.baseUrl}/${code}/unsubscribe`, {});
+  }
 }

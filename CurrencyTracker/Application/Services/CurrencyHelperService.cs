@@ -14,19 +14,15 @@ namespace CurrencyTracker.Application.Services
             _currencyRepository = currencyRepository;
         }
 
-        public async Task<Currency> GetCurrency(string code)
+        public async Task<Currency> DownloadAndSaveCurrency(string code)
         {
-            var currency = await _currencyRepository.GetByCodeAsync(code);
-            if (currency == null)
+            var ratesFromApi = await _nbpApiClient.GetLastRates(code, 30);
+            var currency = new Currency(code);
+            foreach (var rate in ratesFromApi)
             {
-                var ratesFromApi = await _nbpApiClient.GetLastRates(code, 30);
-                currency = new Currency(code);
-                foreach (var rate in ratesFromApi)
-                {
-                    currency.AddExchangeRate(new ExchangeRate(rate.Date, rate.Value));
-                }
-                await _currencyRepository.AddAsync(currency);
+                currency.AddExchangeRate(new ExchangeRate(rate.Date, rate.Value));
             }
+            await _currencyRepository.AddAsync(currency);
 
             return currency;
         }

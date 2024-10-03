@@ -34,6 +34,14 @@ export class CurrencyListComponent implements OnInit {
     );
   }
 
+  unsubscribeCurrency(code: string): void {
+    this.currencyService.unsubscribeToCurrency(code).subscribe(() => {
+      this.getCurrencyList();
+    }, error => {
+      console.error('Error unsubscribing:', error);
+    });
+  }
+
   viewCurrencyHistory(code: string): void {
     this.router.navigate(['/currency-history', code]);
   }

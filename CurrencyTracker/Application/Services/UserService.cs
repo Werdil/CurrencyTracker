@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using CurrencyTracker.Domain.Entities;
 using CurrencyTracker.Domain.Interfaces;
+using CurrencyTracker.Validations;
 using CurrencyTracker.WebApi.Dtos;
+using FluentValidation;
 using System.Security.Claims;
 
 namespace CurrencyTracker.Application.Services;
@@ -27,29 +29,38 @@ public class UserService : IUserService
         _mapper = mapper;
     }
 
-    public async Task RegisterAsync(string username, string password, string confirmPassword)
+    public async Task RegisterAsync(RegisterDto dto)
     {
-        if (password != confirmPassword)
+        var validator = new RegisterDtoValidator();
+        var result = await validator.ValidateAsync(dto);
+        if (!result.IsValid)
         {
-            throw new Exception("Passwords do not match");
+            throw new ValidationException(result.Errors);
         }
 
-        var existingUser = await _userRepository.GetByUsernameAsync(username);
+        var existingUser = await _userRepository.GetByUsernameAsync(dto.Username);
         if (existingUser != null)
         {
             throw new Exception("User with this name already exists");
         }
 
-        var passwordHash = BCrypt.Net.BCrypt.HashPassword(password);
-        var user = new User(username, passwordHash);
+        var passwordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password);
+        var user = new User(dto.Username, passwordHash);
 
         await _userRepository.AddAsync(user);
     }
 
-    public async Task<string> LoginAsync(string username, string password)
+    public async Task<string> LoginAsync(LoginDto dto)
     {
-        var user = await _userRepository.GetByUsernameAsync(username);
-        if (user == null || !user.VerifyPassword(password))
+        var validator = new LoginDtoValidator();
+        var result = await validator.ValidateAsync(dto);
+        if (!result.IsValid)
+        {
+            throw new ValidationException(result.Errors);
+        }
+
+        var user = await _userRepository.GetByUsernameAsync(dto.Username);
+        if (user == null || !user.VerifyPassword(dto.Password))
         {
             throw new UnauthorizedAccessException("Incorrect username or password");
         }
@@ -87,14 +98,18 @@ public class UserService : IUserService
         if (currency != null)
         {
             await _userRepository.DeleteUserCurrencyAsync(userIdGuid, currency.Id);
+
+            var isAnyUserSubscribed = await _userRepository.IsAnyUserSubscribedToCurrencyAsync(currency.Id);
+            if (!isAnyUserSubscribed)
+            {
+                await _currencyRepository.RemoveByCodeAsync(code);
+            }
         }
     }
 
     public async Task<List<CurrencyRateInfoDto>> GetAllCurrencyRateInfosForUser(string userid)
     {
         var guid = Guid.Parse(userid);
-
-        
 
         var user = await _userRepository.GetByUserIdWithCurrenciesAsync(guid, u => u.ExchangeRates
                 .OrderByDescending(er => er.Date)

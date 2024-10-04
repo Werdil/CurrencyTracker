@@ -11,4 +11,5 @@ public interface IUserRepository
     Task AddAsync(User user);
     Task UpdateAsync(User user);
     Task DeleteUserCurrencyAsync(Guid userId, Guid currencyId);
+    Task<bool> IsAnyUserSubscribedToCurrencyAsync(Guid currencyId);
 }

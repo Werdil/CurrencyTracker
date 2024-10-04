@@ -24,7 +24,7 @@ public class ExchangeRateBackgroundService : BackgroundService
             try
             {
                 var now = DateTime.Now;
-                var nextRun = new DateTime(now.Year, now.Month, now.Day, 2, 0, 0).AddDays(1);
+                var nextRun = new DateTime(now.Year, now.Month, now.Day, 4, 0, 0).AddDays(1);
                 var delay = nextRun - now;
 
                 await Task.Delay(delay, stoppingToken);

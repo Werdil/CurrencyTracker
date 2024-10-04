@@ -15,11 +15,17 @@ public class ApplicationContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Currency>()
-            .HasKey(c => c.Id);
+        modelBuilder.Entity<Currency>(eb =>
+        {
+            eb.HasKey(c => c.Id);
+            eb.Property(c => c.Code)
+            .HasMaxLength(3);
+        });
         modelBuilder.Entity<ExchangeRate>(eb =>
         {
             eb.HasKey(e => new { e.CurrencyId, e.Date });
+            eb.Property(e => e.Value)
+            .HasPrecision(10, 4);
         });
 
         modelBuilder.Entity<User>(eb =>

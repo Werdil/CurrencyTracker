@@ -10,7 +10,6 @@ import { CurrencyService } from '../../services/currency.service';
 export class EmaDialogComponent {
   data: { code: string, date: Date, days: number };
   result: any = null;
-  loading: boolean = false; 
   error: string | null = null; 
 
   constructor(
@@ -26,17 +25,14 @@ export class EmaDialogComponent {
   }
 
   onConfirm(): void {
-    this.loading = true;
     this.error = null;
 
     this.currencyService.calculateEMA(this.data.code, this.data.date, this.data.days).subscribe({
       next: (res) => {
         this.result = res;
-        this.loading = false;
       },
       error: (err) => {
         this.error = 'Error calculating EMA';
-        this.loading = false;
       }
     });
   }

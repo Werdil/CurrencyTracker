@@ -3,8 +3,8 @@
 namespace CurrencyTracker.Domain.Interfaces;
 public interface IUserService
 {
-    Task RegisterAsync(string username, string password, string confirmPassword);
-    Task<string> LoginAsync(string username, string password);
+    Task RegisterAsync(RegisterDto dto);
+    Task<string> LoginAsync(LoginDto dto);
     Task SubscribeCurrency(string userid, string code);
     Task<List<CurrencyRateInfoDto>> GetAllCurrencyRateInfosForUser(string userid);
     Task UnsubscribeCurrency(string userid, string code);

@@ -62,4 +62,10 @@ public class UserRepository : IUserRepository
         }
     }
 
+    public async Task<bool> IsAnyUserSubscribedToCurrencyAsync(Guid currencyId)
+    {
+        return await _context.UsersCurrencies
+            .AnyAsync(uc => uc.CurrencyId == currencyId);
+    }
+
 }

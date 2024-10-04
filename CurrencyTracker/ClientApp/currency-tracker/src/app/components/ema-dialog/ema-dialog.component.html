@@ -1,33 +1,24 @@
 <h1 mat-dialog-title>Calculate EMA</h1>
 <div mat-dialog-content>
-  <mat-form-field appearance="fill">
+  <mat-form-field appearance="fill" class="custom-width">
     <mat-label>Select Date</mat-label>
     <input matInput [matDatepicker]="picker" [(ngModel)]="data.date">
-    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
     <mat-datepicker #picker></mat-datepicker>
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
   </mat-form-field>
 
-  <mat-form-field appearance="fill">
+  <mat-form-field appearance="fill" class="custom-width">
     <mat-label>Enter period (days)</mat-label>
     <input matInput type="number" [(ngModel)]="data.days">
   </mat-form-field>
+  <div *ngIf="result" class="result">
+    <mat-label>EMA Calculation Result: {{ result | number: '1.4-4' }}</mat-label>
+  </div>
 </div>
-
-<div *ngIf="loading" class="loading">
-    Loading...
-</div>
-  
-<div *ngIf="result" class="result">
-    <mat-dialog-content>EMA Calculation Result: {{ result | json }}</mat-dialog-content>
-</div>
-  
 <div *ngIf="error" class="error">
     {{ error }}
 </div>
-
 <div mat-dialog-actions>
   <button mat-button (click)="onCancel()">Cancel</button>
-  <button mat-button mat-raised-button color="primary" (click)="onConfirm()" [disabled]="loading">Confirm</button>
+  <button mat-button mat-raised-button color="primary" (click)="onConfirm()">Confirm</button>
 </div>
-
-

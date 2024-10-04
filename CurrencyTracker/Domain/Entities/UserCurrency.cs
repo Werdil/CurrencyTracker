@@ -2,7 +2,6 @@
 
 public class UserCurrency
 {
-    public Guid Id { get; private set; }
     public Guid UserId { get; private set; }
     public Guid CurrencyId { get; private set; }
     public DateTime CreatedDate { get; private set; }

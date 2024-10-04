@@ -30,7 +30,8 @@ namespace CurrencyTracker.Migrations
 
                     b.Property<string>("Code")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(3)
+                        .HasColumnType("nvarchar(3)");
 
                     b.HasKey("Id");
 
@@ -46,7 +47,8 @@ namespace CurrencyTracker.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<decimal>("Value")
-                        .HasColumnType("decimal(18,2)");
+                        .HasPrecision(10, 4)
+                        .HasColumnType("decimal(10,4)");
 
                     b.HasKey("CurrencyId", "Date");
 
@@ -84,9 +86,6 @@ namespace CurrencyTracker.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GETDATE()");
-
-                    b.Property<Guid>("Id")
-                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("UserId", "CurrencyId");
 

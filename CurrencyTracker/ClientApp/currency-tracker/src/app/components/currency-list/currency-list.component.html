@@ -11,22 +11,22 @@
 
     <ng-container matColumnDef="yesterdayValue">
       <th mat-header-cell *matHeaderCellDef> Yesterday value </th>
-      <td mat-cell *matCellDef="let currency"> {{ currency.yesterdayValue }} </td>
+      <td mat-cell *matCellDef="let currency"> {{ currency.yesterdayValue | number: '1.4-4' }} </td>
     </ng-container>
 
     <ng-container matColumnDef="averageRate">
       <th mat-header-cell *matHeaderCellDef> Average Rate </th>
-      <td mat-cell *matCellDef="let currency"> {{ currency.averageRate }} </td>
+      <td mat-cell *matCellDef="let currency"> {{ currency.averageRate | number: '1.4-4' }} </td>
     </ng-container>
 
     <ng-container matColumnDef="minRate">
       <th mat-header-cell *matHeaderCellDef> Min Rate </th>
-      <td mat-cell *matCellDef="let currency"> {{ currency.minRate }} </td>
+      <td mat-cell *matCellDef="let currency"> {{ currency.minRate | number: '1.4-4' }} </td>
     </ng-container>
 
     <ng-container matColumnDef="maxRate">
       <th mat-header-cell *matHeaderCellDef> Max Rate </th>
-      <td mat-cell *matCellDef="let currency"> {{ currency.maxRate }} </td>
+      <td mat-cell *matCellDef="let currency"> {{ currency.maxRate | number: '1.4-4' }} </td>
     </ng-container>
 
     <ng-container matColumnDef="actions">
